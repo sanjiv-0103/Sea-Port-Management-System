@@ -1,0 +1,277 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef3f8;
+}
+
+.sidebar {
+    width: 230px;
+    height: 100vh;
+    background: #003366;
+    color: white;
+    position: fixed;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 6px;
+}
+
+.sidebar a:hover {
+    background: #0059b3;
+}
+
+.logout {
+    background: #cc0000;
+    margin-top: 30px;
+}
+
+.main {
+    margin-left: 270px;
+    padding: 30px;
+}
+
+h1 {
+    color: #003366;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 8px #ccc;
+    text-align: center;
+}
+
+.card h3 {
+    color: #003366;
+}
+
+.card p {
+    font-size: 32px;
+    font-weight: bold;
+    color: #0066cc;
+}
+
+.chart-box {
+    margin-top: 30px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 8px #ccc;
+}
+
+.form-section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 6px #ccc;
+}
+
+input, select {
+    padding: 10px;
+    margin: 6px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+button {
+    background: #0066cc;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.update-btn {
+    background: #008000;
+}
+
+.delete-btn {
+    background: #cc0000;
+    color: white;
+    text-decoration: none;
+    padding: 9px 14px;
+    border-radius: 5px;
+}
+
+.export-btn {
+    background: #006600;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.top-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#searchBox {
+    width: 300px;
+}
+
+table {
+    width: 100%;
+    background: white;
+    border-collapse: collapse;
+    box-shadow: 0 0 6px #ccc;
+}
+
+th {
+    background: #003366;
+    color: white;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.status {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 6px;
+    color: white;
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+.pending {
+    background: orange;
+}
+
+.confirmed {
+    background: green;
+}
+
+.cancelled {
+    background: red;
+}
+
+.flash {
+    background: #d4edda;
+    color: #155724;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.login-body {
+    background: linear-gradient(135deg, #003366, #0066cc);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background: white;
+    padding: 35px;
+    width: 380px;
+    border-radius: 12px;
+    text-align: center;
+}
+.activity-box {
+    margin-top: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px #ccc;
+}
+
+.dashboard-header {
+    background: linear-gradient(135deg, #003366, #0066cc);
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.dashboard-header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+.divider {
+    margin: 40px 0 20px;
+    border: 1px solid #ddd;
+}
+
+.activity-title {
+    font-size: 22px;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.activity-list {
+    list-style: none;
+    padding: 0;
+}
+
+.activity-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 15px;
+}
+
+.time {
+    color: gray;
+    font-size: 13px;
+    margin-left: 8px;
+}
+
+.subtitle {
+    margin-top: 10px;
+    font-size: 16px;
+    opacity: 0.9;
+}
+.dashboard-header h1 {
+    color: white !important;
+}
+
+.activity-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.activity-box li {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+.login-box input {
+    width: 90%;
+    margin: 10px 0;
+}
+
+.error {
+    color: red;
+}
+
+.hint {
+    font-size: 13px;
+    color: gray;
+}

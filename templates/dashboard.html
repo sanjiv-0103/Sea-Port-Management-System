@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="dashboard-header">
+    <h1>🚢 Seaport Management Dashboard</h1>
+    <p class="subtitle">
+        Manage bookings, voyages, cargo, and operations efficiently in one place.
+    </p>
+</div>
+
+<div class="cards">
+
+    <div class="card">
+        <h3>Total Bookings</h3>
+        <p>{{ counts.bookings }}</p>
+    </div>
+
+    <div class="card">
+        <h3>Total Customers</h3>
+        <p>{{ counts.customers }}</p>
+    </div>
+
+    <div class="card">
+    <h3>Confirmed Bookings</h3>
+    <p>{{ counts.confirmed }}</p>
+</div>
+
+
+
+    <div class="card">
+        <h3>Total Voyages</h3>
+        <p>{{ counts.voyages }}</p>
+    </div>
+
+    <div class="card">
+        <h3>Total Routes</h3>
+        <p>{{ counts.routes }}</p>
+    </div>
+
+    <div class="card">
+        <h3>Total Payments</h3>
+        <p>{{ counts.payments }}</p>
+    </div>
+
+    <div class="card">
+        <h3>Total Containers</h3>
+        <p>{{ counts.containers }}</p>
+    </div>
+
+    <div class="card">
+        <h3>Total Cargo</h3>
+        <p>{{ counts.cargo }}</p>
+    </div>
+
+</div>
+<hr class="divider">
+
+<h2 class="activity-title">Recent Activity</h2>
+
+<ul class="activity-list">
+    {% for a in activities %}
+        <li>
+            {{ a[1] }}
+            <span class="time">({{ a[2] }})</span>
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}
