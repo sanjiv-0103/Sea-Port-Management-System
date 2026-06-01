@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Seaport Management System</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>Seaport MS</h2>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/entity/bookings">Bookings</a>
+    <a href="/entity/customers">Customers</a>
+    <a href="/entity/voyages">Voyages</a>
+    <a href="/entity/routes">Sea Routes</a>
+    <a href="/entity/payments">Payments</a>
+    <a href="/entity/containers">Containers</a>
+    <a href="/entity/cargo">Cargo</a>
+    <a href="/logout" class="logout">Logout</a>
+</div>
+
+<div class="main">
+
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <div class="flash">{{ messages[0] }}</div>
+        {% endif %}
+    {% endwith %}
+
+    {% block content %}{% endblock %}
+</div>
+
+</body>
+</html>
